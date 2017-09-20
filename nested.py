@@ -30,6 +30,9 @@ def greet():
 
 greet()
 
+# this is a global name
+# Hello Sammy
+
 
 x = 555
 def func(x):
@@ -41,6 +44,10 @@ def func(x):
 
 func(x)
 print 'x is still ', x
+
+# x is 555
+# changed local x to  2
+# x is still  555
 
 
 
@@ -55,3 +62,9 @@ def funcTwo():
 print 'before calling funcTwo(), z is: ', z
 funcTwo()
 print 'value of z (outside of funcTwo()) is: ', z
+
+# before calling funcTwo(), z is:  777
+# this function is now using the global z
+# because the global z is:  777
+# ran funcTwo(), changed global z to  2
+# value of z (outside of funcTwo()) is:  2
